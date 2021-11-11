@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 let stocksList: Array<string> = ['AAPL', 'GOOG', 'FB', 'AMZN', 'TWTR'];
-let appService: string = 'https://stonks-app-api.herokuapp.com';
+let appService: string = 'https://angular2-in-action-api.herokuapp.com';
 
-export interface StockInterface {
+export interface StonkInterface {
   symbol: string;
   lastTradePriceOnly: number;
   change: number;
@@ -32,7 +32,7 @@ export class StonksService {
 
   loadStockValues(symbolsParam: Array<string>) {
     if (symbolsParam) {
-      return this.http.get<Array<StockInterface>>(appService + '/stocks/snapshot?symbols=' + symbolsParam.join());
+      return this.http.get<Array<StonkInterface>>(appService + '/stocks/snapshot?symbols=' + symbolsParam.join());
     }
     return;
   }

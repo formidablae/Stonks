@@ -9,8 +9,8 @@
       </nav>
     </div>
   </header>
-  <main class="mdl-layout__content" style="padding: 20px;">
-
+  <main class="mdl-layout__content" style="padding: 20px;" *ngIf="stocksList">
+    <summary [stock]="stocksList[0]"></summary>
   </main>
 </div>
 <router-outlet></router-outlet>
