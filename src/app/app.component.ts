@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { StonksService, StonkInterface } from './services/stonks.service';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,4 @@ import { StonksService, StonkInterface } from './services/stonks.service';
 })
 export class AppComponent {
   title = 'Stonks';
-  
-  stocksList: Array<StonkInterface>;
-  
-  constructor(serviceParam: StonksService) {
-    serviceParam.loadStockValues(['AAPL'])?.subscribe(stocksElems => {
-      this.stocksList = stocksElems;
-    })
-  }
 }

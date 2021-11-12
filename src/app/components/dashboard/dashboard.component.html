@@ -1,0 +1,9 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col" *ngIf="!stocksList" style="text-align:
+    center;">
+        Loading
+    </div>
+    <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocksList">
+        <summary [stock]="stock"></summary>
+    </div>
+</div>
