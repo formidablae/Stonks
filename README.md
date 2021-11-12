@@ -4,11 +4,11 @@ A simple frontend client to track stocks.
 
 Dashboard view:
 
-![image](https://user-images.githubusercontent.com/81068781/141538459-38dae6ec-845b-42f7-81d2-f0d68840ca56.png)
+![image](./screenshots/screenshot1.png)
 
 Manage view:
 
-![image](https://user-images.githubusercontent.com/81068781/141538578-b6dc82a0-09dc-457f-b21e-561a39e381c1.png)
+![image](./screenshots/screenshot1.png)
 
 
 This project was developed with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
