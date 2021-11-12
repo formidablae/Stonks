@@ -8,7 +8,7 @@ Dashboard view:
 
 Manage view:
 
-![image](./screenshots/screenshot1.png)
+![image](./screenshots/screenshot2.png)
 
 
 This project was developed with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
